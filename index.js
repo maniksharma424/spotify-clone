@@ -1,7 +1,7 @@
-let q1 = document.getElementById("q1")
+/*let q1 = document.getElementById("q1")
 let q2 = document.getElementById("q2")
 let q3 = document.getElementById("q3")
-let q4 = document.getElementById("q4")
+let q4 = document.getElementById("q4")*/
 
 
 
@@ -21,9 +21,45 @@ var check2= true;
 var check3 = true;
 var check4 = true;
 
-q1.addEventListener("click",()=>{
-    if(check1){down()}
-    function down(){
+function q1(){
+    if(check1){
+        down1()
+        
+    }
+    else{
+        up1()
+    }
+}
+function q2(){
+    if(check2){
+        down2()
+        
+    }
+    else{
+        up2()
+    }
+}
+function q3(){
+    if(check3){
+        down3()
+        
+    }
+    else{
+        up3()
+    }
+}
+function q4(){
+    if(check4){
+        down4()
+        
+    }
+    else{
+        up4()
+    }
+}
+
+
+    function down1(){
     d1.innerHTML = `<i class="fa-sharp fa-solid fa-chevron-up fa-2xl"></i>`
     q1Ans.innerHTML = `<p>Playlists are a great way to save collections of music, either for your own listening or to share.
     </p>
@@ -40,17 +76,20 @@ q1.addEventListener("click",()=>{
         </li>
     </ul>`
     check1 = false
+
     }
 
-if(check1){up()}
-function up(){
-    q1Ans.style.display = 'none'
+
+function up1(){
+    d1.innerHTML-=`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
+    q1Ans.innerHTML = ''
+    check1 = true
 }
     
-})
-q2.addEventListener("click",()=>{
-    if(check2){down()}
-    function down(){ d1.innerHTML = `<i class="fa-sharp fa-solid fa-chevron-up fa-2xl"></i>`
+
+
+
+    function down2(){ d1.innerHTML = `<i class="fa-sharp fa-solid fa-chevron-up fa-2xl"></i>`
     q2Ans.innerHTML = `<ul>
     <li>1. Tap <a href="">Home.</a> 
     </li>
@@ -61,22 +100,40 @@ q2.addEventListener("click",()=>{
     <li>4. Switch on Data Saver.
     </li>
     </ul>`
+    d2.innerHTML = `<i class="fa-sharp fa-solid fa-chevron-up fa-2xl"></i>`
     check2 = false}
     
     
-    if(check2){up()}
-    function up(){
-        q2Ans.innerHTML = ''
+
+    function up2(){
+        q2Ans.innerHTML = ``
+        d2.innerHTML-=`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
+        check2 = true
     }
     
-})
-q3.addEventListener("click",()=>{
+
+    function down3(){
+        d3.innerHTML = `<i class="fa-sharp fa-solid fa-chevron-up fa-2xl"></i>`
     q3Ans.innerHTML = `<p>Any playlist with the shuffle icon will play on shuffle.
     </p>
     <p>Some playlists won't have the shuffle icon, so you can tap any song to play it.
     </p>`
-})
-q4.addEventListener("click",()=>{
+    check3 = false
+    }
+    function up3(){
+        d3.innerHTML-=`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
+        q3Ans.innerHTML = ''
+        check3 = true
+    }
+
+    function down4(){
+        d4.innerHTML = `<i class="fa-sharp fa-solid fa-chevron-up fa-2xl"></i>`
     q4Ans.innerHTML = `<p>Tap <a href="">Search.</a> Under <a href="">Browse All</a>, tap Podcasts.
     </p>`
-})
+    check4 = false
+}
+function up4(){
+    d4.innerHTML-=`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
+    q4Ans.innerHTML = ''
+    check4 = true
+}
