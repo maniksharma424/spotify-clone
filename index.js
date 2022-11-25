@@ -81,7 +81,7 @@ function q4(){
 
 
 function up1(){
-    d1.innerHTML-=`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
+    d1.innerHTML =`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
     q1Ans.innerHTML = ''
     check1 = true
 }
@@ -107,7 +107,7 @@ function up1(){
 
     function up2(){
         q2Ans.innerHTML = ``
-        d2.innerHTML-=`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
+        d2.innerHTML =`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
         check2 = true
     }
     
@@ -121,7 +121,7 @@ function up1(){
     check3 = false
     }
     function up3(){
-        d3.innerHTML-=`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
+        d3.innerHTML =`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
         q3Ans.innerHTML = ''
         check3 = true
     }
@@ -133,7 +133,7 @@ function up1(){
     check4 = false
 }
 function up4(){
-    d4.innerHTML-=`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
+    d4.innerHTML =`<i class="fa-solid fa-chevron-down fa-2xl"></i>`
     q4Ans.innerHTML = ''
     check4 = true
 }
