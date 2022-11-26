@@ -503,7 +503,7 @@ flex-direction: column;
     height: 1200px;
    }
     nav{
-        width: 410px;
+        width: 412px;
         height: 50px;
         justify-content: flex-start;
         align-items: center;
@@ -524,7 +524,7 @@ flex-direction: column;
     position: absolute;
     background-color: rgb(0, 0, 0);
     height: 690px;
-    width: 392px;
+    width: 412px;
     animation: slide .3s  ;
     -webkit-animation: slide .3s  ;
     
@@ -582,7 +582,7 @@ flex-direction: column;
         height: 60%;
     }
     .banner{
-        width: 410px;
+        width: 412px;
         height: 400px;
         background: url(https://www.scdn.co/i/free/bubbles-mobile.svg) center center / 100% 927px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166)) rgb(108, 14, 224);
         background-position: center center;
@@ -613,7 +613,7 @@ flex-direction: column;
         align-content: flex-start;
         justify-content: flex-start;
         height: fit-content;
-        width: 410px;
+        width: 412px;
         
     }
     .why{
@@ -730,7 +730,7 @@ flex-direction: column;
     .lower-middle-banner{
         position: relative;
         bottom: 15px;
-        width: 410px;
+        width: 412px;
        height: 200px;
     }
     .lower-middle-banner p{
@@ -740,12 +740,12 @@ flex-direction: column;
         display: flex;
         justify-content: flex-start;
         height: fit-content;
-        width: 410px;
+        width: 412px;
     }
     .faq-container{
         
         position: relative;
-        width: 410px;
+        width: 412px;
         bottom: 230px;
 
         
@@ -763,10 +763,14 @@ flex-direction: column;
         font-size: x-small;
     }
     .lower{
-        width: 410px;
+        width: 412px;
         position: relative;
         bottom: 300px;
         height: 400px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
     }
     .lower p{
         width: 65%;
@@ -814,7 +818,7 @@ flex-direction: column;
         position: relative;
 
         bottom: 310px;
-        width: 410px;
+        width: 412px;
         justify-content: flex-start;
     }
     .box1{
