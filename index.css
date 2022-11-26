@@ -11,7 +11,7 @@ body{
 }
 nav{
     display: flex;
-    max-width: 100%;
+    width: 100%;
     flex-wrap: wrap;
     height: 80px;
     justify-content: center;
@@ -59,7 +59,7 @@ nav{
     color: green;
 }
 .banner{
-    border: 1px solid black;
+    
     height: 600px;
     width: 100%;
 
@@ -316,7 +316,6 @@ nav{
 .lower{
     height: 500px;
     width: 100%;
-    border: 1px solid black;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -504,7 +503,7 @@ flex-direction: column;
     height: 1200px;
    }
     nav{
-        width: 392px;
+        width: 410px;
         height: 50px;
         justify-content: flex-start;
         align-items: center;
@@ -583,7 +582,7 @@ flex-direction: column;
         height: 60%;
     }
     .banner{
-        width: 390px;
+        width: 410px;
         height: 400px;
         background: url(https://www.scdn.co/i/free/bubbles-mobile.svg) center center / 100% 927px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166)) rgb(108, 14, 224);
         background-position: center center;
@@ -614,8 +613,8 @@ flex-direction: column;
         align-content: flex-start;
         justify-content: flex-start;
         height: fit-content;
-        width: 390px;
-        border: 1px solid black;
+        width: 410px;
+        
     }
     .why{
         margin-top: 20px;
@@ -680,7 +679,7 @@ flex-direction: column;
         width: 50px;
         height: 5px;
         border-radius: 5px;
-        border: 1px solid black;
+        
     }
     .screen{
         
@@ -708,9 +707,9 @@ flex-direction: column;
         border-top-right-radius: 100px;
         margin-left: 0;
         position: relative;
-        bottom: 540px;
-        width: 87px;
-        left: 30px;
+        bottom: 960px;
+        width: 104px;
+        left: 306px;
 
         height: 130px;
 
@@ -720,8 +719,9 @@ flex-direction: column;
     
     .gradient-container{
         position: absolute;
-        top: 1470px;
+        top: 1420px;
         width: 100%;
+            border-top-right-radius: 150px;
         height: 29%;
 
         background: linear-gradient(transparent, rgb(176, 35, 194));
@@ -730,7 +730,7 @@ flex-direction: column;
     .lower-middle-banner{
         position: relative;
         bottom: 15px;
-        width: 392px;
+        width: 410px;
        height: 200px;
     }
     .lower-middle-banner p{
@@ -740,13 +740,18 @@ flex-direction: column;
         display: flex;
         justify-content: flex-start;
         height: fit-content;
+        width: 410px;
     }
     .faq-container{
-
-        position: relative;
-        left: 40px;
-        bottom: 230px;
         
+        position: relative;
+        width: 410px;
+        bottom: 230px;
+
+        
+    }
+    .questions{
+        padding: 0 10px 0 10px;
     }
     .q-heading a{
         font-size: 27px;
@@ -758,6 +763,7 @@ flex-direction: column;
         font-size: x-small;
     }
     .lower{
+        width: 410px;
         position: relative;
         bottom: 300px;
         height: 400px;
@@ -776,7 +782,7 @@ flex-direction: column;
 
     }
     footer{
-        width: 375px;
+        width: 390px;
         position: relative;
         bottom: 300px;
         padding-top: 30px;
@@ -808,7 +814,7 @@ flex-direction: column;
         position: relative;
 
         bottom: 310px;
-        width: 395px;
+        width: 410px;
         justify-content: flex-start;
     }
     .box1{
