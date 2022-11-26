@@ -533,8 +533,8 @@ flex-direction: column;
     
 }
 #animate-logo{
-    animation: slideP .4s ;
-    -webkit-animation: slideP .4s ;
+  animation: slideP .7s ;
+    -webkit-animation: slideP .7s ;
 }
 @keyframes slideP {
     0%{
