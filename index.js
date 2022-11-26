@@ -36,27 +36,17 @@ function callSlide(){
 
 function downSlide(){
     console.log('hi');
-    slideOPTN.innerHTML =` 
-     <br>
-    <br>
-    <p id="animate-logo">Premium</p>
-    <p id="animate-logo">Support</p>
-    <p id="animate-logo">Download</p>
-    <p id="animate-logo">-</p>
-    <p id="animate-logo">
-        <a href="">Sign up</a>
-    </p>
-    <p id="animate-logo">
-        <a href="">Log in</a>
-    </p>
-    <p id="animate-logo"><span><i class="fa-brands fa-spotify"></i> Spotify</span></p>`
+    slideOPTN.style.display = 'inline'
     OptBtn.innerHTML = `<i class="fa-solid fa-xmark fa-2xl"></i>`
     checkSlide = false
+    document.getElementById('img1').style.display = "none"
 }
 function upSlide(){
     OptBtn.innerHTML = `<i class="fa-sharp fa-solid fa-grip-lines fa-2xl">`
-    slideOPTN.innerHTML = ``
+    slideOPTN.style.display = 'none'
     checkSlide = true
+    document.getElementById('img1').style.display = "inline"
+
 }
 
 

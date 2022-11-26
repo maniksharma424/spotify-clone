@@ -6,6 +6,9 @@
 body{
     font-family: spotify-circular,Helvetica,Arial,sans-serif;
 }
+#slide-options{
+    display: none;
+}
 nav{
     display: flex;
     max-width: 100%;
@@ -518,9 +521,10 @@ flex-direction: column;
         color: white;
     }
 #slide-options{
+    display: none;
     position: absolute;
     background-color: rgb(0, 0, 0);
-    max-height: 460px;
+    height: 690px;
     width: 392px;
     animation: slide .3s  ;
     -webkit-animation: slide .3s  ;
@@ -530,7 +534,7 @@ flex-direction: column;
 }
 #animate-logo{
     animation: slideP .4s ;
-   -webkit-animation: slideP .4s ;
+    -webkit-animation: slideP .4s ;
 }
 @keyframes slideP {
     0%{
@@ -555,7 +559,7 @@ flex-direction: column;
 }
 #slide-options p{
     margin-left: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     color: white;
     font-size: 30px;
     font-weight: bolder;
