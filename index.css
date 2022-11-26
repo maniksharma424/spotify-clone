@@ -504,7 +504,7 @@ flex-direction: column;
    }
     nav{
         width: 412px;
-        height: 50px;
+        height: 60px;
         justify-content: flex-start;
         align-items: center;
     }
@@ -512,7 +512,7 @@ flex-direction: column;
         display: inline-block;
 
         position: relative;
-        left: 170px;
+        left: 210px;
     }
     .slide-btn button{
         background-color: black;
