@@ -16,10 +16,49 @@ let d1 = document.getElementById("d1")
 let d2 = document.getElementById("d2")
 let d3 = document.getElementById("d3")
 let d4 = document.getElementById("d4")
+let OptBtn = document.getElementById("slide-optn-btn")
+let slideOPTN = document.getElementById("slide-options")
 var check1 = true;
 var check2= true;
 var check3 = true;
 var check4 = true;
+var checkSlide = true
+
+
+function callSlide(){
+    if(checkSlide){
+        downSlide()
+    }
+    else{
+        upSlide()
+    }
+}
+
+function downSlide(){
+    console.log('hi');
+    slideOPTN.innerHTML =` 
+     <br>
+    <br>
+    <p id="animate-logo">Premium</p>
+    <p id="animate-logo">Support</p>
+    <p id="animate-logo">Download</p>
+    <p id="animate-logo">-</p>
+    <p id="animate-logo">
+        <a href="">Sign up</a>
+    </p>
+    <p id="animate-logo">
+        <a href="">Log in</a>
+    </p>
+    <p id="animate-logo"><span><i class="fa-brands fa-spotify"></i> Spotify</span></p>`
+    OptBtn.innerHTML = `<i class="fa-solid fa-xmark fa-2xl"></i>`
+    checkSlide = false
+}
+function upSlide(){
+    OptBtn.innerHTML = `<i class="fa-sharp fa-solid fa-grip-lines fa-2xl">`
+    slideOPTN.innerHTML = ``
+    checkSlide = true
+}
+
 
 function q1(){
     if(check1){

@@ -21,6 +21,9 @@ nav{
     display: flex;
     
 }
+.slide-btn{
+    display: none;
+}
 .logo{
     height: 100%;
     width: 50%;
@@ -116,6 +119,10 @@ nav{
     color: black;
     font-weight: 700;
     padding: 5px 15px;
+}
+.get-btn button:hover{
+    transform: scaleX(105%);
+    transform: scaleY(105%);
 }
 .middle-banner{
     height: 550px;
@@ -333,6 +340,10 @@ nav{
     background-color: white;
 
 }
+.lower button:hover{
+    transform: scaleX(105%);
+    transform: scaleY(105%);
+}
 footer{
     
     width: 100%;
@@ -495,6 +506,70 @@ flex-direction: column;
         justify-content: flex-start;
         align-items: center;
     }
+    .slide-btn{
+        display: inline-block;
+
+        position: relative;
+        left: 170px;
+    }
+    .slide-btn button{
+        background-color: black;
+        border: none;
+        color: white;
+    }
+#slide-options{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    max-height: 460px;
+    width: 392px;
+    animation: slide .3s  ;
+    -webkit-animation: slide .3s  ;
+    
+
+    
+}
+#animate-logo{
+    animation: slideP .4s ;
+   -webkit-animation: slideP .4s ;
+}
+@keyframes slideP {
+    0%{
+        position: relative;
+        left: 350px;
+    }
+    100%{
+        position: relative;
+        left: 0px;
+    }
+}
+@keyframes slide {
+    0%{
+        position: absolute;
+        left: 385px;
+    }
+    
+    100%{
+        position:absolute;
+        left: 0px;
+    }
+}
+#slide-options p{
+    margin-left: 30px;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#slide-options p a{
+    color: hsl(0, 0%, 75%);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#slide-options p span{
+    font-size: 17px;
+}
+
     .links{
         display: none;
     }
@@ -713,11 +788,11 @@ flex-direction: column;
     .jobs,.resources,.company{
         font-size: 16px;
 
+        display: flex;
+        align-content: flex-start;
+
     }
-    .company{
-        position: relative;
-        left: 5px;
-    }
+   
     .social-links{
         position: relative;
         top: 70px;
@@ -725,13 +800,15 @@ flex-direction: column;
     }
     .legal{
         position: relative;
+
         bottom: 310px;
         width: 392px;
         justify-content: flex-start;
     }
     .box1{
         display: flex;
-
+        position: relative;
+        left: 15px;
         width: 60%;
         justify-content:space-evenly;
         flex-wrap: wrap;
