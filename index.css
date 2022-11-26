@@ -623,13 +623,13 @@ flex-direction: column;
         background-color:rgb(176, 35, 194) ;
     }
     .r-block{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 50px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 210px;
         margin-left: 0;
         position: relative;
-        bottom: 540px;
-        width: 85px;
-        left: 30px;
+        bottom: 940px;
+        width: 150px;
+        left: 305px;
 
         height: 130px;
 
@@ -695,6 +695,7 @@ flex-direction: column;
 
     }
     footer{
+        width: 375px;
         position: relative;
         bottom: 300px;
         padding-top: 30px;
@@ -711,10 +712,16 @@ flex-direction: column;
     }
     .jobs,.resources,.company{
         font-size: 16px;
+
+    }
+    .company{
+        position: relative;
+        left: 5px;
     }
     .social-links{
         position: relative;
         top: 70px;
+        right: 20px;
     }
     .legal{
         position: relative;
@@ -731,7 +738,13 @@ flex-direction: column;
 
     }
     #a1{
-        margin-left: 3px;
+position: relative;
+right:27px;
+
+    }
+    #a2{
+        position: relative;
+        right: 40px;
     }
     .box1 a{
         font-size: 12px;
@@ -744,6 +757,10 @@ flex-direction: column;
         justify-content:flex-start;
         align-items: center;
         flex-wrap: wrap;
+        align-items: space-between;
+        height: 80px;
+        position: relative;
+        bottom: 25px;
 
     }
     .box2 a{
