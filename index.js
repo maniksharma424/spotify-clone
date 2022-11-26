@@ -118,7 +118,7 @@ function up1(){
 
 
 
-    function down2(){ d1.innerHTML = `<i class="fa-sharp fa-solid fa-chevron-up fa-2xl"></i>`
+    function down2(){ 
     q2Ans.innerHTML = `<ul>
     <li>1. Tap <a href="">Home.</a> 
     </li>
